@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100e13">
+  <meta name="description" content="BEYOND THE STAGE — an independent fan-made celebration of BTS, their music, and the moments shared with ARMY.">
+  <title>BEYOND THE STAGE — A Celebration of BTS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="home">
+    <a class="wordmark" href="#home" aria-label="Beyond the Stage home"><span class="wordmark-mark">B<span>·</span>T</span><span class="wordmark-name">BEYOND<br>THE STAGE</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#members">Members</a><a href="#discography">Discography</a><a href="#timeline">Timeline</a><a href="#about">About</a>
+    </nav>
+    <a class="header-note" href="#message"><span class="pulse-dot"></span> A FAN-MADE TRIBUTE</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="hero-ring ring-one"></div><div class="hero-ring ring-two"></div><div class="hero-glow"></div><div class="hero-grain"></div></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> SEVEN VOICES. ONE UNIVERSE.</p>
+        <h1 id="hero-title">BEYOND<br><em>THE STAGE</em></h1>
+        <p class="hero-subtitle">A Celebration of BTS</p>
+        <p class="hero-copy">A love letter to the music, the moments, and the people who found each other along the way.</p>
+        <p class="hero-disclaimer">An unofficial fan-made tribute · Not affiliated with BTS or BIGHIT MUSIC</p>
+        <a class="button button-light" href="#members">Step inside <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-side-note" aria-hidden="true">BANGTAN SONYEONDAN <span>·</span> EST. 2013</div>
+      <div class="hero-bottom"><span>SEOUL · EVERYWHERE</span><span class="hero-scroll">SCROLL TO EXPLORE <i></i></span><span>ARMY, ALWAYS</span></div>
+    </section>
+
+    <section class="intro section-pad" id="about">
+      <p class="eyebrow"><span class="eyebrow-line"></span> MORE THAN MUSIC</p>
+      <div class="intro-grid"><h2>A sound that<br>made <em>room</em> for us.</h2><div class="intro-copy"><p>From a first step in Seoul to a world of shared stories, BTS have built something that travels far beyond any stage. Their songs hold ambition and uncertainty, joy and becoming.</p><p>This is a small corner of the internet for remembering that journey—and celebrating the seven artists at its heart.</p><span class="signature">With love, ARMY <span>✳</span></span></div></div>
+    </section>
+
+    <section class="members section-pad" id="members">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> THE PEOPLE BEHIND THE SOUND</p><h2>Seven, <em>together.</em></h2></div><p class="section-aside">Meet the members<br>of BTS <span>↘</span></p></div>
+      <div class="member-grid" id="member-grid" aria-label="BTS members"></div>
+      <p class="member-hint"><span>✦</span> SEVEN VOICES, ONE SHARED STORY · SELECT A CARD TO MEET THE MEMBER</p>
+    </section>
+
+    <section class="discography section-pad" id="discography">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> A CATALOGUE OF CHAPTERS</p><h2>Soundtrack to<br><em>becoming.</em></h2></div><p class="section-aside">Every era leaves<br>a little light behind.</p></div>
+      <div class="album-toolbar"><p class="album-count" id="album-count" aria-live="polite">A selection of albums</p><label class="search-wrap"><span class="visually-hidden">Search albums</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="album-search" type="search" placeholder="Find an album…" autocomplete="off"></label><div class="filter-group" role="group" aria-label="Filter albums by type"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button><button class="filter-button" type="button" data-filter="studio" aria-pressed="false">Studio</button><button class="filter-button" type="button" data-filter="ep" aria-pressed="false">EP</button><button class="filter-button" type="button" data-filter="special" aria-pressed="false">Special</button><button class="filter-button" type="button" data-filter="single" aria-pressed="false">Single</button></div></div>
+      <div class="album-grid" id="album-grid"></div><p class="empty-state" id="empty-state" hidden>No albums match that search. Try another title or filter.</p>
+      <p class="discography-note">A text-led guide to selected group releases. Dates refer to original Korean release dates. Album names and release details are presented for informational purposes.</p>
+    </section>
+
+    <section class="timeline section-pad" id="timeline">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> THE YEARS THAT SHAPED US</p><h2>In every <em>chapter.</em></h2></div><p class="section-aside">A few moments<br>along the way.</p></div>
+      <div class="timeline-track" id="timeline-track"></div>
+      <p class="timeline-note">A brief, non-exhaustive timeline of milestones in BTS's group story.</p>
+    </section>
+
+    <section class="message-section" id="message">
+      <div class="message-art" aria-hidden="true"><div class="message-orbit"></div><div class="message-star">✳</div></div>
+      <div class="message-inner"><p class="eyebrow"><span class="eyebrow-line"></span> A NOTE TO THE UNIVERSE</p><h2>Leave a little<br><em>light here.</em></h2><p class="message-lede">What does BTS mean to you? Leave a note for the fan community.</p>
+        <form class="message-form" id="message-form"><div class="form-row"><label for="fan-name">Your name <span>(or a nickname)</span></label><input id="fan-name" name="name" type="text" maxlength="40" placeholder="How should we call you?" required></div><div class="form-row"><label for="fan-message">Your message</label><textarea id="fan-message" name="message" rows="3" maxlength="240" placeholder="A song, a memory, a little something…" required></textarea><span class="character-count" id="character-count">0 / 240</span></div><button class="button button-light" type="submit">Send your note <span aria-hidden="true">↗</span></button><p class="form-privacy">Your note appears here on this page only; it is not uploaded or saved.</p></form>
+      </div>
+      <div class="message-wall" aria-live="polite" aria-label="Fan messages"><p class="wall-label">NOTES FROM ARMY</p><div id="message-list" class="message-list"><p class="wall-empty">The first note could be yours. <span>✳</span></p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="credits"><a class="wordmark footer-wordmark" href="#home"><span class="wordmark-mark">B<span>·</span>T</span><span class="wordmark-name">BEYOND<br>THE STAGE</span></a><p class="footer-message">Made with care, for the music and the memories.</p><p class="disclaimer">This is an unofficial fan-made website created for educational and informational purposes. It is not affiliated with, endorsed by, or sponsored by BTS or BIGHIT MUSIC. All third-party names and marks belong to their respective owners.</p><details class="site-credits"><summary>Credits / Disclaimer</summary><p>Created by an independent fan as an educational and informational tribute. This page uses original text, CSS gradients, and decorative typography in place of artist photographs and album artwork. BTS member names, album titles, and related marks remain the property of their respective owners. No official approval or affiliation is claimed.</p><p>Album release information is included as a concise fan reference; please consult official BTS and BIGHIT MUSIC channels for authoritative details.</p></details><a class="back-top" href="#home">BACK TO TOP <span>↑</span></a><p class="copyright">© <span id="year"></span> BEYOND THE STAGE · MADE BY A FAN, WITH LOVE</p></footer>
+
+  <dialog class="member-dialog" id="member-dialog" aria-labelledby="dialog-name"><button class="dialog-close" type="button" aria-label="Close member details">×</button><p class="eyebrow"><span class="eyebrow-line"></span> BTS · MEMBER</p><p class="dialog-number" id="dialog-number"></p><h2 id="dialog-name"></h2><p class="dialog-role" id="dialog-role"></p><p class="dialog-bio" id="dialog-bio"></p><p class="dialog-note">A member of BTS since the group's debut in 2013.</p></dialog>
+  <noscript><p class="noscript-note">This fan page needs JavaScript enabled to display member and album details.</p></noscript>
+</body>
+</html>
+
